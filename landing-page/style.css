@@ -1,0 +1,7 @@
+body {
+    background-image: url("images/bg-image/scooter.svg");
+    background-repeat: no-repeat; /* Do not repeat a background image. */
+    background-size: 50%; /* the size of the image */
+    background-position: center; /* the image must be in the center of the bage */
+    background-attachment: fixed; /* don't scroll along with the page */
+}
