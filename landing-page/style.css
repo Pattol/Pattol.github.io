@@ -4,4 +4,30 @@ body {
     background-size: 50%; /* the size of the image */
     background-position: center; /* the image must be in the center of the bage */
     background-attachment: fixed; /* don't scroll along with the page */
+    background-color: #F7F7FF;
+    
+}
+
+.header {
+    max-width: 1280px; /* balansing the width of the sections */
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: url(fonts/Montserrat-Regular.ttf);
+    color: #333131;
+}
+
+.logo {
+    width: 114.73px;
+    height: 81.05px;
+}
+
+h1 {
+    color: #333131;
+    font-size: 80px;
+    font-family: bold url(fonts/Montserrat-BlackItalic.ttf);
+    padding: 1rem;
+}
+
+.footer {  
+    background-color: #FFFD8C;
 }
