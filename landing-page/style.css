@@ -4,8 +4,9 @@ body {
     background-size: 50%; /* the size of the image */
     background-position: center; /* the image must be in the center of the bage */
     background-attachment: fixed; /* don't scroll along with the page */
-    background-color: #F7F7FF;
-    
+    background-color: #F7F7FF; 
+    padding: 0;
+    margin: 0 auto;
 }
 
 .header {
@@ -14,6 +15,13 @@ body {
     font-size: 24px;
     font-family: url(fonts/Montserrat-Regular.ttf);
     color: #333131;
+}
+
+main {
+    padding: 0;
+    margin: 0 auto;
+    width: 114.73px;
+    height: 81.05px;
 }
 
 .logo {
@@ -28,6 +36,87 @@ h1 {
     padding: 1rem;
 }
 
+.form  {
+    position: relative;
+    display: inline-block;
+    max-width: 700px;
+    min-width: 500px;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 40px 0;
+    left: 50%;
+}
+
+H3 {
+ color: #333131;
+ font-size: 40px;
+ font-family: url(fonts/Montserrat-Bold.ttf);
+} 
+
+.form p {
+    font-family: url(fonts/Montserrat-Regular.ttf);
+    font-size: 16px;
+    color: #333131;
+}
+.form p a {
+    color: #FF8480;
+}
+
+.form input {
+    width: 449px;
+    height: 55px;
+    background-color: #F4F4F5;
+    border-radius: 11px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    font-family: url(fonts/Montserrat-Regular.ttf);
+}
+
+.form input[placeholder-shown]{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: url(fonts/Montserrat-Regular.ttf);
+    
+}
+
+.form input[type=checkbox] {
+    width: 25px;
+    height: 26px;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    font-family: url(fonts/Montserrat-Regular.ttf);
+}
+
+input[type=submit] {
+    background-color: #57EEAB; /*  the color submit */
+    width: 451px;
+    height: 57px;
+    font-size: 32px;
+    font-family: url(fonts/Montserrat-Bold.ttf);
+}
+
 .footer {  
     background-color: #FFFD8C;
+    width: 1920px;
+    height: 180px;
+    color: #333131;
+    font-family: url(fonts/Montserrat-Bold.ttf);
 }
+
+.footer .form-a input[type=submit] {
+    background-color: #FF8480;
+    border-radius: 11px;
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    font-family:url(fonts/Montserrat-Bold.ttf);
+}
+
+
+
+  
