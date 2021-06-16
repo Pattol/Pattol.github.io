@@ -1,52 +1,240 @@
-body {
-    background-image: url("images/bg-image/scooter.svg");
-    background-repeat: no-repeat; /* Do not repeat a background image. */
-    background-size: 50%; /* the size of the image */
-    background-position: center; /* the image must be in the center of the bage */
-    background-attachment: fixed; /* don't scroll along with the page */
-    background-color: #F7F7FF; 
-    padding: 0;
-    margin: 0 auto;
+/* mobile and tablet */
+@media only screen and (min-device-width: 375px) 
+                    and (max-device-width: 768px)   {
+
+    body {
+        background-image: url("images/bg-image/scooter.svg");
+        background-repeat: no-repeat; /* Do not repeat a background image. */
+        background-size: 50%; /* the size of the image */
+        background-position: center; /* the image must be in the center of the bage */
+        background-attachment: fixed; /* don't scroll along with the page */
+        background-color: #F7F7FF; 
+        padding: 0;
+        margin: 0 auto;
+}
+
+.logo{
+        max-width: 1280px; /* balansing the width of the sections */
+        width: 114.73px;
+        height: 81.05px;
 }
 
 .grid {
-    width:90%;
-    margin: 0 auto;
+        margin: 0 auto;
+        display: grid;
+        width: 540px;
+        grid-template-columns: 400px;
+        align-items: start;
+        justify-content: space-between;
+}
+
+.grid :first-child {
+    align-self: center;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    float: left;
+        display: flex;
+        flex-direction: column;
 }
-
- .logo{
-    max-width: 1280px; /* balansing the width of the sections */
-    width: 114.73px;
-    height: 81.05px;
-}
-
+    
 main {
- /* the font color + font size + font family for paragraph beside the checkbox section */
+     /* the font color + font size + font family for paragraph beside the checkbox section */
     font-size: 18px;
     font-family: 'Montserrat';
     color: #333131;
 }
 
 h1 {
- /* the font color + font size + font family for h1  inside the nav section */
-    color: #333131;
-    font-size: 80px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    padding: 1rem;
-}
+        /* the font color + font size + font family for h1  inside the nav section */
+            color: #333131;
+            font-size: 80px;
+            font-family: 'Montserrat';
+            font-weight: bold;
+ }
 
+    
 .form  {
     position: relative;       /*  is positioned relative to its normal position */
     display: inline-block;    /* allows to set a width and height on the element */
-    max-width: 700px;
-    min-width: 500px;
+    background-color: #F7F7FF;  /* the background-color of the box form */
+    border-radius: 40px;  /* The radius of the element's corners. */
+    margin: 40px 0;
+    width: 90%;
+    padding: 42px;           /* from the box area tll the input is 42px */
+    box-shadow: 5px 10px 15px #707070;
+}
+
+        
+nav > p {
+    /* the font color + font size + font family for paragraph inside the nav section */
+    font-family:'Montserrat';
+    font-size: 23PX;
+    color: #333131;
+}
+
+main > .form  > h2 {
+    /* the font color + font size + font family for h2 in the form inside the main section */
+    color: #333131;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+main > .form > p {
+    /* the font color + font size + font family for paragraph in the form inside the main section */
+    font-family: 'Montserrat';
+    font-size: 23PX;
+    color: #333131;
+}
+
+.form a {
+    color: #FF8480;
+}
+    
+.form input {
+    width: 300px;
+    height: 55px;
+    border-radius: 11px;
+    background-color: rgba(236, 236, 236, 0.952);
+    margin-top: 15px;
+    font-size: 18px;
+    border: none;
+    font-family: 'Montserrat';
+    text-decoration: none; 
+    padding: 10px 20px;
+}
+
+.form input[type=checkbox] {
+    width: 25px;
+    height: 26px;
+    font-size: 18px;  /* the font size of the text bechide the checkbox  */
+    border-radius: 5px;
+    background-color: #FFFFFF;  /* the color of the checkbox  */
+    border:#333131; 
+    font-family: 'Montserrat';
+}
+
+input[type=submit] {
+    background-color: #57EEAB; /*  the color submit */
+    width: 350px;
+    height: 57px;
+    font-size: 32px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+    
+footer { 
+    background-color: #FFFD8C; /* the color of the footer */
+    width: 90%;
+    color: #333131;
+    font-family: 'Montserrat';
+    font-weight: bold;    
+    padding: 20px 20px;
+}
+
+footer .hours h3 {
+        /* the font color + font size + font family for h3 inside the main section */
+    color: #333131;
+    font-family: 'Montserrat';
+    font-weight: bold;        
+    font-size: 18px;
+}
+
+footer .hours p {
+    /* the font color + font size + font family for paragraph inside the footer section */
+    color: #333131;
+    font-family: 'Montserrat';
+    font-weight: bold;       
+    font-size: 16px;
+}
+
+footer .form-a input{
+    background-color: #F7F7FF;
+    border-radius: 11px;
+    list-style: inside;
+    border: none;
+}
+
+footer .form-a input[type=text-a] {
+    width: 46px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+
+footer .form-a input[type=text] {
+    width: 230px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+
+footer .form-a input[type=submit] {
+    background-color: #FF8480;
+    color: #F7F7FF;
+    border-radius: 11px;
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: bold;  
+    padding: 5px 5px;
+}
+
+.footer-icons {
+    text-align: center;
+    padding: 5px 5px;
+}
+
+}
+/* tablet  */
+@media only screen and (min-device-width: 1920px) {
+    body {
+        background-image: url("images/bg-image/scooter.svg");
+        background-repeat: no-repeat; /* Do not repeat a background image. */
+        background-size: 50%; /* the size of the image */
+        background-position: center; /* the image must be in the center of the bage */
+        background-attachment: fixed; /* don't scroll along with the page */
+        background-color: #F7F7FF; 
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .grid {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    nav {
+        float: left;
+    }
+    
+     .logo{
+        max-width: 1280px; /* balansing the width of the sections */
+        width: 114.73px;
+        height: 81.05px;
+    }
+    
+    main {
+     /* the font color + font size + font family for paragraph beside the checkbox section */
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: #333131;
+    }
+    
+    h1 {
+     /* the font color + font size + font family for h1  inside the nav section */
+        color: #333131;
+        font-size: 80px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+    
+.form  {
+    position: relative;       /*  is positioned relative to its normal position */
+    display: inline-block;    /* allows to set a width and height on the element */
     box-sizing: content-box; /*  gives you the default CSS box-sizing behavior. */
     background-color: #F7F7FF;  /* the background-color of the box form */
     border-radius: 40px;  /* The radius of the element's corners. */
@@ -54,6 +242,7 @@ h1 {
     left: 670px;             /* from the text till the bix spaced between 670px  */
     padding: 42px;           /* from the box area tll the input is 42px */
     box-shadow: 5px 10px 15px #707070;
+    width: 534px;
 }
 
 nav > p {
@@ -115,77 +304,89 @@ input[type=submit] {
     font-weight: bold;
 }
 
-footer { 
-    background-color: #FFFD8C; /* the color of the footer */
-    width: 1920px;
-    height: 180px;
-    color: #333131;
-    font-family: 'Montserrat';
-    font-weight: bold;    
-    padding: 20px 40px;
-}
-
-footer .hours h5 {
-    color: #333131;
-    font-family: url(fonts/Montserrat-Regular.ttf);
-    font-size: 18px;
-}
-
-footer .hours p {
-    color: #333131;
-    font-family: url(fonts/Montserrat-Bold.ttf);
-    font-size: 16px;
-}
-
-footer .form-a input{
-    background-color: #F7F7FF;
-    border-radius: 11px;
-    list-style: inside;
-    border: none;
-}
-
-footer .form-a input[type=text-a] {
-    width: 122px;
-    height: 40px;
-    font-size: 16px;
-}
-
-footer .form-a input[type=text] {
-    width: 260px;
-    height: 40px;
-    font-size: 16px;
-}
-
-footer .form-a input[type=submit] {
-    background-color: #FF8480;
-    color: #F7F7FF;
-    border-radius: 11px;
-    width: 200px;
-    height: 40px;
-    font-size: 24px;
-    font-family:url(fonts/Montserrat-Bold.ttf);
-}
-
-.footer-icons {
-    text-align: right;
-}
-
-.footer-icons .fa fa-instagram {
-    width: 30.64px;
-    height: 30.64px;
-}
-
-.footer-icons .fa fa-twitter {
-    width: 30.63px;
-    height: 30.63px;
-}
-
-.footer-icons .fa fa-facebook {
-    width: 30.63px;
-    height: 30.63px;
-}
-
-.footer-icons .fa fa-linkedin {
-    width: 30.63px;
-    height: 30.63px;
+    footer { 
+        background-color: #FFFD8C; /* the color of the footer */
+        width: 1920px;
+        height: 180px;
+        color: #333131;
+        font-family: 'Montserrat';
+        font-weight: bold;    
+        padding: 20px 40px;
+        right: 30px;
+        display: grid;
+    }
+    
+    footer .hours h3 {
+            /* the font color + font size + font family for h3 inside the main section */
+        color: #333131;
+        font-family: 'Montserrat';
+        font-weight: bold;        
+        font-size: 18px;
+    }
+    
+    footer .hours p {
+        /* the font color + font size + font family for paragraph inside the footer section */
+        color: #333131;
+        font-family: 'Montserrat';
+        font-weight: bold;       
+        font-size: 16px;
+    }
+    
+    footer .form-a input{
+        background-color: #F7F7FF;
+        border-radius: 11px;
+        list-style: inside;
+        border: none;
+    }
+    
+    footer .form-a input[type=text-a] {
+        width: 122px;
+        height: 40px;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+    
+    footer .form-a input[type=text] {
+        width: 260px;
+        height: 40px;
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+    
+    footer .form-a input[type=submit] {
+        background-color: #FF8480;
+        color: #F7F7FF;
+        border-radius: 11px;
+        width: 200px;
+        height: 40px;
+        font-size: 24px;
+        font-family: 'Montserrat';
+        font-weight: bold;  
+        padding: 5px 5px;
+    }
+    
+    .footer-icons {
+        text-align: right;
+    }
+    
+    .footer-icons .fa fa-instagram {
+        width: 30.64px;
+        height: 30.64px;
+    }
+    
+    .footer-icons .fa fa-twitter {
+        width: 30.63px;
+        height: 30.63px;
+    }
+    
+    .footer-icons .fa fa-facebook {
+        width: 30.63px;
+        height: 30.63px;
+    }
+    
+    .footer-icons .fa fa-linkedin {
+        width: 30.63px;
+        height: 30.63px;
+    }
+    
 }
