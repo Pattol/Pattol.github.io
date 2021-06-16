@@ -189,8 +189,9 @@ footer .form-a input[type=submit] {
 }
 
 }
-/* tablet  */
-@media only screen and (min-device-width: 1920px) {
+/* Destop  */
+@media only screen and (min-device-width: 941px)
+                    and (max-device-width: 1920px) {
     body {
         background-image: url("images/bg-image/scooter.svg");
         background-repeat: no-repeat; /* Do not repeat a background image. */
