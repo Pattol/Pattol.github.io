@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <title>Landing</title>
 </head>
 </body>
@@ -47,6 +49,15 @@
         <div class="hours">
             <h5>See how much you can earn with Dash.</h5>
             <p>how many hours do you want to drive with us this week?</p><br>
+                   <!-- Div for form a  -->
+            <form class="form-a">
+                <label for="hours"></label>
+                <input type="text-a" id="hours" placeholder="Hours" name="hours">
+                <label for="city"></label>
+                <input type="text" id="city" placeholder="City" name="city">
+                <input type="submit" id="CALCULATE" placeholder="CALCULATE" name="CALCULATE" value="CALCULATE">
+                <!-- end of div for form a   -->
+             </form>
         </div>
 <!-- end of div for hours  -->
 
@@ -59,15 +70,5 @@
         </div>
 <!-- end of div for footer-icons -->
 
-       <!-- Div for form a  -->
-       <div>
-         <form class="form-a">
-             <input type="number" id="hours" name="hours" placeholder="hours"><br>
-             <input type="text" id="city" name="city" placeholder="city"><br>
-             <input type="submit" value="CALCULATE"><br>
-         </form>
-     </div>
-<!-- end of div for form a   -->
-    </footer>
 </div>
 </html>
