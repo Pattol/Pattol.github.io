@@ -7,103 +7,98 @@ body {
     background-color: #F7F7FF; 
     padding: 0;
     margin: 0 auto;
-    /* display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "logo   header"
-    "main   form"
-    "footer  footer footer" */
 }
 
-.header {
-    max-width: 1280px; /* balansing the width of the sections */
+.grid {
+    width:90%;
     margin: 0 auto;
-    font-size: 24px;
-    font-family: url(fonts/Montserrat-Regular.ttf);
-    color: #333131;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+ .logo{
+    max-width: 1280px; /* balansing the width of the sections */
+    width: 114.73px;
+    height: 81.05px;
 }
 
 main {
-    padding: 0;
-    margin: 0 auto;
-    width: 114.73px;
-    height: 81.05px;
-    font-size: 24px;
-    font-family: url(fonts/Montserrat-Regular.ttf);
+ /* the font color + font size + font family for paragraph beside the checkbox section */
+    font-size: 18px;
+    font: url(fonts/Montserrat-Regular.ttf);
     color: #333131;
-
-}
-
-.logo {
-    width: 114.73px;
-    height: 81.05px;
 }
 
 h1 {
+ /* the font color + font size + font family for h1  inside the nav section */
     color: #333131;
     font-size: 80px;
-    font-family: bold url(fonts/Montserrat-BlackItalic.ttf);
+    font: bold url(fonts/Montserrat-BlackItalic.ttf);
     padding: 1rem;
 }
 
 .form  {
-    position: relative;
-    display: inline-block;
+    position: relative;       /*  is positioned relative to its normal position */
+    display: inline-block;    /* allows to set a width and height on the element */
     max-width: 700px;
     min-width: 500px;
-    box-sizing: border-box;
-    padding: 30px 25px;
-    background-color: #F7F7FF;
-    border-radius: 40px;
+    box-sizing: content-box; /*  gives you the default CSS box-sizing behavior. */
+    background-color: #F7F7FF;  /* the background-color of the box form */
+    border-radius: 40px;  /* The radius of the element's corners. */
     margin: 40px 0;
-    left: 50%;
-    border: #707070;
-    padding: 10px;
+    left: 670px;             /* from the text till the bix spaced between 670px  */
+    padding: 42px;           /* from the box area tll the input is 42px */
     box-shadow: 5px 10px 15px #707070;
 }
 
-.form H3 {
- color: #333131;
- font-size: 40px;
- font-family: url(fonts/Montserrat-Bold.ttf);
-} 
-
-.form p {
+nav > p {
+    /* the font color + font size + font family for paragraph inside the nav section */
     font-family: url(fonts/Montserrat-Regular.ttf);
-    font-size: 16px;
+    font-size: 23PX;
     color: #333131;
 }
-.form p a {
+
+main > .form  > h2 {
+    /* the font color + font size + font family for h2 in the form inside the main section */
+    color: #333131;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: url(fonts/Montserrat-Bold.ttf);
+}
+
+main > .form > p {
+    /* the font color + font size + font family for paragraph in the form inside the main section */
+    font-family: url(fonts/Montserrat-Regular.ttf);
+    font-size: 23PX;
+    color: #333131;
+}
+
+.form a {
     color: #FF8480;
 }
 
 .form input {
     width: 449px;
     height: 55px;
-    background-color: #F4F4F5;
     border-radius: 11px;
-    padding: 10px;
-    margin-top: 20px;
+    background-color: rgb(244, 244, 245);
+    margin-top: 15px;
     font-size: 18px;
     border: none;
     font-family: url(fonts/Montserrat-Regular.ttf);
 }
 
-.form input[placeholder-shown]{
-    font-size: 18px;
-    line-height: 22px;
-    background-color: #9B9B9B;
-    font-family: url(fonts/Montserrat-Regular.ttf);
-    
-}
-
 .form input[type=checkbox] {
     width: 25px;
     height: 26px;
-    font-size: 18px;
+    font-size: 18px;  /* the font size of the text bechide the checkbox  */
     border-radius: 5px;
-    line-height: 22px;
+    background-color: #FFFFFF;  /* the color of the checkbox  */
+    border:#333131; 
     font-family: url(fonts/Montserrat-Regular.ttf);
 }
 
@@ -115,34 +110,47 @@ input[type=submit] {
     font-family: url(fonts/Montserrat-Bold.ttf);
 }
 
-.footer {  
-    background-color: #FFFD8C;
-    width: 1920px;
+footer {  
+    background-color: #FFFD8C; /* the color of the footer */
+    width: 1800px;
     height: 180px;
     color: #333131;
     font-family: url(fonts/Montserrat-Bold.ttf);
 }
 
-.footer .hours h5 {
+footer .hours h5 {
     color: #333131;
     font-family: url(fonts/Montserrat-Regular.ttf);
     font-size: 18px;
 }
 
-.footer .hours p {
+footer .hours p {
     color: #333131;
     font-family: url(fonts/Montserrat-Bold.ttf);
     font-size: 16px;
 }
 
-.footer .form-a input{
+footer .form-a input{
     background-color: #F7F7FF;
     border-radius: 11px;
+    list-style: inside;
 }
 
+footer .form-a input[type=number] {
+    width: 122px;
+    height: 40px;
+    font-size: 16px;
+}
 
-.footer .form-a input[type=submit] {
+footer .form-a input[type=text] {
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+}
+
+footer .form-a input[type=submit] {
     background-color: #FF8480;
+    color: #F7F7FF;
     border-radius: 11px;
     width: 200px;
     height: 40px;
@@ -150,6 +158,26 @@ input[type=submit] {
     font-family:url(fonts/Montserrat-Bold.ttf);
 }
 
+.footer-icons {
+    text-align: right;
+}
 
+.footer-icons .fa fa-instagram {
+    width: 30.64px;
+    height: 30.64px;
+}
 
-  
+.footer-icons .fa fa-twitter {
+    width: 30.63px;
+    height: 30.63px;
+}
+
+.footer-icons .fa fa-facebook {
+    width: 30.63px;
+    height: 30.63px;
+}
+
+.footer-icons .fa fa-linkedin {
+    width: 30.63px;
+    height: 30.63px;
+}
