@@ -2,22 +2,21 @@
     margin: 0;
 }
 /* Header */
-
 ul.nav {
-    position: fixed;
+    position: fixed; /* always stays in the same place even if the page is scrolled */
     background-color: #7851a9;
-    list-style-type: none;
+    list-style-type: none; /* No item marker is shown.*/
     margin: 0;
     padding: 0;
     width: 60%;
     height: 100%;
-    overflow: auto;
-    text-decoration:none;
+    text-decoration: none; /* to remove underline of li list  */
+    overflow: auto; /* a scroll-bar should be added to see the rest of the content */
     color: white;
 }
 
-
 ul.nav li a.active {
+     /* the colors for active nav */
     background-color: #30733F;
     color: white;
     box-shadow: gray 5px 5px 5px;
@@ -26,36 +25,37 @@ ul.nav li a.active {
 
 /* footer */
 .footer {
-    position: fixed;
-    left: 0;
+    position: fixed; /* always stays in the same place even if the page is scrolled */
     bottom: 0;
     width: 100%;
     background-color: #7851a9;
-    display: flex;
-    flex-direction: row;
+/* using grid to section my footer */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 ul.contact li {
-    list-style-type: none;
+    list-style-type: none; /* No item marker is shown.*/
     color: white;
     border-radius: 20px;
-    text-decoration:none;
+    text-decoration: none; /* to remove underline of li list  */
 }
 
 ul.contact li a {
-    justify-content: center;
+    justify-content: center;     /*  text around the center */
 }
 
 div.contact {
     box-sizing: border-box;
 }
 /* end footer */
+
 @media screen and (max-width: 1800px) {
     /* head */
     ul.nav {
       width: 100%;
       height: auto;
-      position: absolute;
+      position: fixed; /* always stays in the same place even if the page is scrolled */
     }
     
     ul.nav li a {
@@ -69,26 +69,29 @@ div.contact {
     .footer {
         width: 100%;
         height: auto;
-        position: absolute;
+        position: fixed; /* always stays in the same place even if the page is scrolled */
     }
   }
 
 @media screen and (max-width: 400px) {
     /* head */
     ul.nac li a {
-      text-align: center;
+        text-align: center; /* centaring the taxt */
       float: none;
     }
     /* end head */
 
     /* footer */
     .footer {
+        /* using flex to section my footer */
         display: flex;
         flex-direction: column;
+        position: fixed; /* always stays in the same place even if the page is scrolled */
+        justify-content: center;     /*  text around the center */
     }
 
     ul.contct li a {
-        text-align: center;
+        text-align: center; /* centaring the taxt */
         float: none;
     }
 }
