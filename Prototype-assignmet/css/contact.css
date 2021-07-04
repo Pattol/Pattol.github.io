@@ -28,6 +28,13 @@ header {
 }
 /* End header */
 
+/*  */
+
+
+
+
+
+
 /* footer */
 footer {
     position: fixed; /* always stays in the same place even if the page is scrolled */
@@ -39,19 +46,31 @@ footer {
     grid-template-columns: repeat(3, 1fr);
 }
 
-ul.contact li {
-    list-style-type: none; /* No item marker is shown.*/
+div.blockone {
+    justify-content: center;     /*  text around the center */
+    text-align: center; /*  text around the center */
     color: white;
-    border-radius: 20px;
-    text-decoration: none; /* to remove underline of li list  */
 }
 
-ul.contact li a {
+div.blockone h1 > a {
+    color: #D9BFF2;    
+}
+
+.blocktwo a {
+    list-style-type: none; /* No item marker is shown.*/
+    color: #D9BFF2;
+    text-decoration: none; /* to remove underline of li list  */
     justify-content: center;     /*  text around the center */
 }
 
-div.contact {
+div.blocktwo {
     box-sizing: border-box;
+    justify-content: center;     /*  text around the center */
+    text-align: center; /*  text around the center */
+}
+
+div.sectionthree h2, p {
+    color: white;
 }
 /* end footer */
 
@@ -71,7 +90,7 @@ div.contact {
         justify-content: center;     /*  text around the center */
     }
 
-    ul.contct li a {
+    .blocktwo a, .blockone h1, .blockone a, .blockthree h2, .blockthree p{
         text-align: center; /* centaring the taxt */
         float: none;
     }
