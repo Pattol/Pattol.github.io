@@ -1,30 +1,35 @@
-* {
+body {
     margin: 0;
 }
-/* Header */
-ul.nav {
-    position: fixed; /* always stays in the same place even if the page is scrolled */
-    background-color: #7851a9;
-    list-style-type: none; /* No item marker is shown.*/
-    margin: 0;
-    padding: 0;
-    width: 60%;
-    height: 100%;
-    text-decoration: none; /* to remove underline of li list  */
-    overflow: auto; /* a scroll-bar should be added to see the rest of the content */
-    color: white;
+/* header */
+header {
+/* using grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color:#7851a9; /* background color for header section */
 }
 
-ul.nav li a.active {
-     /* the colors for active nav */
+.topnav a {
+    text-align: center;
+    margin-left: 2.5em; /* space between  */
+    color: white;
+    font-size: 20px;
+    padding: 14px 16px;
+    text-decoration: none;  /* to remove underline of li list  */
+    text-align: center;
+}
+
+.topnav a:active{
+    /* the colors for active nav */
     background-color: #30733F;
     color: white;
     box-shadow: gray 5px 5px 5px;
 }
-/* end headding  */
+/* End header */
 
 /* footer */
-.footer {
+footer {
     position: fixed; /* always stays in the same place even if the page is scrolled */
     bottom: 0;
     width: 100%;
@@ -50,39 +55,15 @@ div.contact {
 }
 /* end footer */
 
-@media screen and (max-width: 1800px) {
-    /* head */
-    ul.nav {
-      width: 100%;
-      height: auto;
-      position: fixed; /* always stays in the same place even if the page is scrolled */
-    }
-    
-    ul.nav li a {
-      float: right;
-      padding: 15px;
-    }
-    /* end head */
-
-    /* footer */
-
-    .footer {
-        width: 100%;
-        height: auto;
-        position: fixed; /* always stays in the same place even if the page is scrolled */
-    }
-  }
-
 @media screen and (max-width: 400px) {
-    /* head */
-    ul.nac li a {
+/* header */
+    header a {
         text-align: center; /* centaring the taxt */
-      float: none;
+        float: none;
     }
-    /* end head */
-
+/* end header */
     /* footer */
-    .footer {
+    footer {
         /* using flex to section my footer */
         display: flex;
         flex-direction: column;
@@ -95,3 +76,19 @@ div.contact {
         float: none;
     }
 }
+
+
+@media screen and (max-width: 1800px) {
+    /* header */
+    header a {
+        width: 100%;
+        height: auto;
+    }
+    /* end header */
+    /* footer */
+    footer {
+        width: 100%;
+        height: auto;
+        position: fixed; /* always stays in the same place even if the page is scrolled */
+    }
+  }
