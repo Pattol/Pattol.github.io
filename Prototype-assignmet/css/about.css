@@ -62,13 +62,12 @@ article {
 }
 
 .one {
-    font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #D9BFF2;
     padding: 10px;
-    margin: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 5px; /* the spacing in every erea of the box*/
+    margin-right: 20px; /* the spacing in right of the box*/
+    margin-top: 20px; /* the spacing in top of the box*/
 }
 
 .one h2{
@@ -119,6 +118,7 @@ div.sectionthree h2, div.sectionthree p {
 
     footer {
         display: flex;
+        /* using flex */
     }
 }
 
@@ -126,5 +126,6 @@ div.sectionthree h2, div.sectionthree p {
 
     footer {
         display: grid;
+        /* using grid */
     }
 }

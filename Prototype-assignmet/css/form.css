@@ -20,7 +20,7 @@ body {
 }
 
 .beginning {
-    padding: 25px 20px;
+    padding: 25px 25px;
     max-width: 850px;
     width: 50%;
     border-radius: 10px; /* Radius is set for all 4 sides by 10px*/
@@ -41,13 +41,8 @@ body {
     justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
 }
 
-form .user .input-box {
-    margin-bottom: 15px;
-}
-
 form .input-box span.holder{
     display: block;
-    font-weight: bold; /* makes the taxt bold */
 }
 
 .user .input-box input{
@@ -93,11 +88,15 @@ form .category label .dot{
     transition: all 0.7s ease-out;  /* using animate */
     box-shadow: 5px 5px 5px #707070;
 }
-
+/* The general sibling selector selects all elements that are next siblings of a specified element. */
+/* thats means select every .one element that are preceded by a #square-1 element*/
  #square-1:checked ~ .category label .one,
+ /* select every .two element that are preceded by a #square-2 element*/
  #square-2:checked ~ .category label .two,
+/* select every .three element that are preceded by a #square-3 element*/
  #square-3:checked ~ .category label .three{
     background-color: #507B4A;
+/* this section for when clicking the dot/square it will change the color*/
 }
 
  form input[type="radio"] {
@@ -126,7 +125,6 @@ form .category label .dot{
 
  @media(max-width: 584px){
 
-
     .beginning{
     max-width: 100%;
     }
@@ -147,11 +145,11 @@ form .category label .dot{
     .user-details::-webkit-scrollbar {
         width: 9px;
     }
-  }
+}
 
   @media(max-width: 459px) {
     
     .beginning .content .category {
         flex-direction: column;
     }
-  }
+}
