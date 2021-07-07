@@ -46,31 +46,28 @@ form .input-box span.holder{
 }
 
 .user .input-box input{
-    height: 45px;
+    height: 30px;
     width: 100%;
-    font-size: 16px;
     border-radius: 10px; /* Radius is set for all 4 sides by 10px */
     padding-left: 15px;   /* for the text moving left by 15px inside the input */
     border: 3px solid #507B4A;
-    transition: all 0.5s ease-out; /* Apply to all changed properties */  
 }
 
+/* this css for the typing. when tou type for example your namw */
 .user .input-box input:focus,
 .user .input-box input:valid{
-    border-color: #D9BFF2;
-    
+    color: #507B4A;  /* the text of your name changes to green */
 }
 
 form .gender-details .gender-title{
     font-size: 20px;
-    font-weight: 500;
 }
 
 form .category{
     display: flex;  /* using a flex  */
     justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
-    width: 60%;
-    margin: 14px 0 ;
+    width: 40%;  /* the size between the category */
+    margin: 10px 10px;
 }
 
 form .category label{
@@ -119,12 +116,10 @@ form .category label .dot{
 }
 
  form .button input:hover {
-    transform: scale(0.75);  /* using animate */
     background: #507B4A;
 }
 
- @media(max-width: 584px){
-
+@media(max-width: 584px){
     .beginning{
     max-width: 100%;
     }
@@ -147,8 +142,7 @@ form .category label .dot{
     }
 }
 
-  @media(max-width: 459px) {
-    
+@media(max-width: 459px) {
     .beginning .content .category {
         flex-direction: column;
     }
