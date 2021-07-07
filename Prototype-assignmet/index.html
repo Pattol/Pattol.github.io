@@ -5,50 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Prototype Assignment</title></head>
+    <title>Fun Breeze</title>
+</head>
 <body>
+    <!-- header -->
     <header class="header">
-        <div>
-            <img src="images/logo81.gif" alt="logo"  class="logo">
-        </div>
-        <div class="topnav">
-            <a href="contact.html">Contact</a>
-            <a href="#menu">Menu</a>
-            <a href="about.html">About</a>
-            <a class="active"  href="index.html">Home</a>
-        </div>
+        <img src="images/logo81.gif" alt="logo"  class="logo">
+        <h1>Fun Breeze</h1>
     </header>
+    <!-- navigation -->
         <main>
+                <div class="topnav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Menu</a>
+                    <a href="form.html">Register</a>
+                </div>
+        <!-- the articals  -->
+         <article>
             <div class="one">
-                    <img src="images/DrumstickCones300.gif" alt="DrumstickCones300" class="DrumstickCones300" >
-                    <img src="images/vanilla-ice-cream114.gif" alt="vanilla-ice-cream114" class="vanilla-ice-cream114" >
-            </div>
-            <div class="article">
-                <h2> Hello </h2>
+                    <img 
+                        srcset="images/ice-cream-320.gif 320w, 
+                                images/ice-cream-480.gif 480w, 
+                                images/ice-cream-720.gif 720w,
+                                images/ice-cream-960.gif 960w"
+                        sizes="(min-width: 960px) 50vw, 100vw"
+                        src="images/ice-cream-960.gif" 
+                        alt="ice screem"
+                        class="image1" >
+                <h2>
+                    our flavors
+                </h2>
                 <p>
                     our flavors and names on mood, so if you are having
                     a divorce party for you could get salty ice scream that 
                     is essentially salted caramel OR if you are having a 
                     baby shower you get the excited ice cream 
                     that is essentially super kid. Also keep in mind 
-                    nutrition and make healthier options for ice cream.               
-                 </p> 
-                 </div>
+                    nutrition and make healthier options for ice cream.                
+                </p>
+            </div>
+         </article>
+         <article>
+            <div class="one">
+                <img 
+                srcset="images/american-320.gif 320w, 
+                        images/american-480.gif 480w, 
+                        images/american-720.gif 720w,
+                        images/american-960.gif 960w"
+                sizes="(min-width: 960px) 50vw, 100vw"
+                src="images/american-960.gif" 
+                alt="ice screem"
+                class="image1" >
+                <h2>
+                    our service
+                </h2>
+                <p>
+                    started out of my home three years ago when i went on manternity leave.
+                    grew from ctering to friends and family to craft sales and community events.
+                    through word of mouth I become more popular out am still just catering for events such as birthday and weddings
+                    on weekends mostly.                 
+                </p> 
+            </div>
+            </article>
         </main>
-        <footer>
-            <div class="blockone">
-                <h1>Fun<a>Breeze</a></h1>
-                <a>@2011</a>
-            </div>
-            <div class="blocktwo">
-                <a href="adress:HintonAve">Hinton Ave</a><br>
-                <a href="tel:5554280940">613-743-3693</a><br>
-                <a href="mailto:FunBreeze@gmail.com"> FunBreeze@gmail.com</a><br>
-            </div>
-            <div class="sectionthree">
-                <h2>ABOUT THE CUMPANY</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </footer>
-    </body>
+    <!-- footer -->
+    <footer>
+        <div class="blockone">
+            <h1>Fun<a>Breeze</a></h1>
+            <a>@2011</a>
+        </div>
+        <div class="blocktwo">
+            <a href="adress:HintonAve">Hinton Ave</a><br>
+            <a href="tel:5554280940">613-743-3693</a><br>
+            <a href="mailto:FunBreeze@gmail.com"> FunBreeze@gmail.com</a><br>
+        </div>
+        <div class="sectionthree">
+            <h2>ABOUT THE CUMPANY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </footer>
+
+</body>
 </html>

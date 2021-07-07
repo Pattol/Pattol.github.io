@@ -1,49 +1,88 @@
 body {
-    margin: 0;
+    margin: 0; /* Apply to all four sides  0 */
+    padding: 0;  /* Apply to all four sides 0 */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../images/heather-barnes-EZXfS9_o9DA-unsplash.jpg");
+    background-repeat: no-repeat; /* Do not repeat a background image. */
+    background-size: 100%; /* the size of the image */
+    background-position: center; /* the image must be in the center of the bage */
+    background-attachment: fixed; /* don't scroll along with the page */
+    background-size: cover; 
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;   /* all the text to be time new roman */
 }
-/* header */
-header {
-/* using grid */
+  
+.header {
+    padding: 20px;
+    text-align: center;
+}
+  
+header > h1{
+    font-size: 40px;
+    color: #8053A8;
+    text-shadow: 5px 5px 5px #507B4A;
+}
+
+.logo {
+    padding: 3px;
+    float: left;
+    top: 8px;
+    right: 16px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #8053A8;
+}
+  
+.topnav a {
+    float: left;
+    display: flex;  /* using a flex  */
+    align-items: center; /* Pack items around the center */    
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.topnav a:hover {
+    transition: all 0.7s ease;  /* using animate */
+    background-color: #507B4A; /* when you click it change the colors  */
+    color: black;
+}
+
+article {
+    /* using grid for the artical */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color:#7851a9; /* background color for header section */
+    grid-template-rows: 0.2fr 0.2fr;
 }
 
-.topnav a {
-    text-align: center;
-    margin-left: 2.5em; /* space between  */
-    color: white;
-    font-size: 20px;
-    padding: 14px 16px;
-    text-decoration: none;  /* to remove underline of li list  */
-    text-align: center;
+.one {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #D9BFF2;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.topnav a:active{
-    /* the colors for active nav */
-    background-color: #30733F;
-    color: white;
-    box-shadow: gray 5px 5px 5px;
+.one h2{
+    text-transform: uppercase; /* to do upper case for all text */
+ 
 }
-/* End header */
 
-/*  */
+P  {
+    color: #707070;
+}
 
-
-
-
-
-
-/* footer */
 footer {
-    position: fixed; /* always stays in the same place even if the page is scrolled */
-    bottom: 0;
-    width: 100%;
-    background-color: #7851a9;
-/* using grid to section my footer */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;  /* using a flex  */
+    align-items: center; /* Pack items around the center */
+    justify-content: space-around;
+    padding: 10px 10px;
+    background-color: #8053A8;
 }
 
 div.blockone {
@@ -69,45 +108,20 @@ div.blocktwo {
     text-align: center; /*  text around the center */
 }
 
-div.sectionthree h2, p {
+div.sectionthree h2, div.sectionthree p {
     color: white;
 }
-/* end footer */
 
-@media screen and (max-width: 400px) {
-/* header */
-    header a {
-        text-align: center; /* centaring the taxt */
-        float: none;
-    }
-/* end header */
-    /* footer */
+@media (max-width: 584px){
+
     footer {
-        /* using flex to section my footer */
         display: flex;
-        flex-direction: column;
-        position: fixed; /* always stays in the same place even if the page is scrolled */
-        justify-content: center;     /*  text around the center */
-    }
-
-    .blocktwo a, .blockone h1, .blockone a, .blockthree h2, .blockthree p{
-        text-align: center; /* centaring the taxt */
-        float: none;
     }
 }
 
+@media(max-width: 459px) {
 
-@media screen and (max-width: 1800px) {
-    /* header */
-    header a {
-        width: 100%;
-        height: auto;
-    }
-    /* end header */
-    /* footer */
     footer {
-        width: 100%;
-        height: auto;
-        position: fixed; /* always stays in the same place even if the page is scrolled */
+        display: grid;
     }
-  }
+}

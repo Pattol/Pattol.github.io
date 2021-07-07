@@ -1,0 +1,157 @@
+* {
+    margin: 0; /* Apply to all four sides  0 */
+    padding: 0;  /* Apply to all four sides 0 */
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../images/heather-barnes-EZXfS9_o9DA-unsplash.jpg");
+    background-repeat: no-repeat; /* Do not repeat a background image. */
+    background-size: 100%; /* the size of the image */
+    background-position: center; /* the image must be in the center of the bage */
+    background-attachment: fixed; /* don't scroll along with the page */
+    background-size: cover; 
+    position: relative;
+}
+
+body {
+    display: flex;  /* using a flex  */
+    justify-content: left;     /* Pack items around the left */
+    align-items: center; /* Pack items around the center */
+    height: 100vh;
+}
+
+.beginning {
+    padding: 25px 20px;
+    max-width: 850px;
+    width: 50%;
+    border-radius: 10px; /* Radius is set for all 4 sides by 10px*/
+    box-shadow: 5px 5px 5px #507B4A;
+}
+
+.beginning .title {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold; /* makes the taxt bold */
+    color: #507B4A;
+}
+
+.content form .user {
+    margin: 10px 0 10px 0; /* spacing between the text. */
+    display: flex;  /* using a flex  */
+    flex-wrap: wrap;
+    justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
+}
+
+form .user .input-box {
+    margin-bottom: 15px;
+}
+
+form .input-box span.holder{
+    display: block;
+    font-weight: bold; /* makes the taxt bold */
+}
+
+.user .input-box input{
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 10px; /* Radius is set for all 4 sides by 10px */
+    padding-left: 15px;   /* for the text moving left by 15px inside the input */
+    border: 3px solid #507B4A;
+    transition: all 0.5s ease-out; /* Apply to all changed properties */  
+}
+
+.user .input-box input:focus,
+.user .input-box input:valid{
+    border-color: #D9BFF2;
+    
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .category{
+    display: flex;  /* using a flex  */
+    justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
+    width: 60%;
+    margin: 14px 0 ;
+}
+
+form .category label{
+    display: flex;  /* using a flex  */
+    text-align: center; /*  text around the center */
+}
+
+form .category label .dot{
+    margin-right: 10px;
+    background: #D9BFF2;
+    border-radius: 30%; /* Radius is set for all 4 sides by 30% */
+    height: 20px;
+    width: 20px;
+    border: 5px solid;
+    transition: all 0.7s ease-out;  /* using animate */
+    box-shadow: 5px 5px 5px #707070;
+}
+
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+    background-color: #507B4A;
+}
+
+ form input[type="radio"] {
+    display: none;
+}
+
+ form .button{
+    height: 45px;
+}
+
+ form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px; /* Radius is set for all 4 sides by 15px */
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.7s ease;    /* using animate */
+    background: #D9BFF2;
+}
+
+ form .button input:hover {
+    transform: scale(0.75);  /* using animate */
+    background: #507B4A;
+}
+
+ @media(max-width: 584px){
+
+
+    .beginning{
+    max-width: 100%;
+    }
+
+    form .user .input-box {
+        margin-bottom: 15px;  
+        width: 100%;
+    }
+
+    form .category{
+        width: 100%;
+    }
+
+    .content form .user {
+        max-height: 700px;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 9px;
+    }
+  }
+
+  @media(max-width: 459px) {
+    
+    .beginning .content .category {
+        flex-direction: column;
+    }
+  }
