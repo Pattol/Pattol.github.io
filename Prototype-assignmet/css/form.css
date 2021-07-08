@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0; /* Apply to all four sides  0 */
     padding: 0;  /* Apply to all four sides 0 */
     box-sizing: border-box;
@@ -12,19 +12,56 @@
     position: relative;
 }
 
-body {
-    display: flex;  /* using a flex  */
-    justify-content: left;     /* Pack items around the left */
-    align-items: center; /* Pack items around the center */
-    height: 100vh;
+
+.header {
+    padding: 20px;
+    text-align: center;
 }
+  
+.header  h1{
+    font-size: 40px;
+    color: #8053A8;
+    margin-left: 150px;
+}
+
+.header h1 > a {
+    color: #D9BFF2;    
+}
+
+.logo {
+    padding: 3px;
+    float: left;
+    top: 8px;
+    right: 16px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #8053A8;
+}
+  
+.topnav a {
+    float: left;
+    display: flex;  /* using a flex  */
+    align-items: center; /* Pack items around the center */    
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.topnav a:hover {
+    transition: all 0.7s ease;  /* using animate */
+    background-color: #507B4A; /* when you click it change the colors  */
+    color: black;
+}
+
 
 .beginning {
     padding: 25px 25px;
-    max-width: 850px;
+    max-width: 450px; /* for the box whidth */
     width: 50%;
     border-radius: 10px; /* Radius is set for all 4 sides by 10px*/
-    box-shadow: 5px 5px 5px #507B4A;
+    box-shadow: 0 10px 10px #507B4A;
+    margin-top: 100px;
 }
 
 .beginning .title {
@@ -48,9 +85,8 @@ form .input-box span.holder{
 .user .input-box input{
     height: 30px;
     width: 100%;
-    border-radius: 10px; /* Radius is set for all 4 sides by 10px */
-    padding-left: 15px;   /* for the text moving left by 15px inside the input */
-    border: 3px solid #507B4A;
+    border-radius: 6px; /* Radius is set for all 4 sides by 10px */
+    padding-left: 1px;   /* for the text moving left by 15px inside the input */
 }
 
 /* this css for the typing. when tou type for example your namw */
