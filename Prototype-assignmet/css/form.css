@@ -2,7 +2,7 @@ body {
     margin: 0; /* Apply to all four sides  0 */
     padding: 0;  /* Apply to all four sides 0 */
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; /* all the text will be used as a times new roman  */
     background-image: url("../images/heather-barnes-EZXfS9_o9DA-unsplash.jpg");
     background-repeat: no-repeat; /* Do not repeat a background image. */
     background-size: 100%; /* the size of the image */
@@ -12,20 +12,21 @@ body {
     position: relative;
 }
 
-
+/* header  */
 .header {
     padding: 20px;
     text-align: center;
 }
   
 .header  h1{
-    font-size: 40px;
-    color: #8053A8;
+    font-size: 40px;   /* the font of the h1 line */
+    color: #8053A8;     /* the color of text "FUN" */
     margin-left: 150px;
 }
 
 .header h1 > a {
-    color: #D9BFF2;    
+    color: #D9BFF2;   
+    /* the color of text "Breeze" */ 
 }
 
 .logo {
@@ -34,6 +35,7 @@ body {
     top: 8px;
     right: 16px;
 }
+/* navigation */
 .topnav {
     overflow: hidden;
     background-color: #8053A8;
@@ -63,7 +65,7 @@ body {
     box-shadow: 0 10px 10px #507B4A;
     margin-top: 100px;
 }
-
+/* the beganing of the form */
 .beginning .title {
     position: relative;
     font-size: 25px;
@@ -93,6 +95,7 @@ form .input-box span.holder{
 .user .input-box input:focus,
 .user .input-box input:valid{
     color: #507B4A;  /* the text of your name changes to green */
+/* learning this code from codinglab.come */
 }
 
 form .gender-details .gender-title{
@@ -118,7 +121,7 @@ form .category label .dot{
     height: 20px;
     width: 20px;
     border: 5px solid;
-    transition: all 0.7s ease-out;  /* using animate */
+    transition: all 0.7s ease-out;  /* using animate */ /* this code Ilearned from 3WSchool   */
     box-shadow: 5px 5px 5px #707070;
 }
 /* The general sibling selector selects all elements that are next siblings of a specified element. */
@@ -130,6 +133,7 @@ form .category label .dot{
  #square-3:checked ~ .category label .three{
     background-color: #507B4A;
 /* this section for when clicking the dot/square it will change the color*/
+/* this code Ilearned from CodeingLab.come   */
 }
 
  form input[type="radio"] {
@@ -147,16 +151,58 @@ form .category label .dot{
     border: none;
     color: #fff;
     font-size: 25px;
-    transition: all 0.7s ease;    /* using animate */
+    transition: all 0.7s ease;    /* using animate */  /* this code I learned from 3WSchool   */
     background: #D9BFF2;
 }
 
  form .button input:hover {
     background: #507B4A;
 }
+/* footer */
+footer {
+    display: flex;  /* using a flex  */
+    align-items: center; /* Pack items around the center */
+    justify-content: space-around;
+    padding: 10px 10px;
+    background-color: #8053A8;
+}
+
+div.blockone {
+    justify-content: center;     /*  text around the center */
+    text-align: center; /*  text around the center */
+    color: white;
+}
+
+div.blockone h1 > a {
+    color: #D9BFF2;    
+}
+
+.blocktwo a {
+    list-style-type: none; /* No item marker is shown.*/
+    color: #D9BFF2;
+    text-decoration: none; /* to remove underline of li list  */
+    justify-content: center;     /*  text around the center */
+}
+
+div.blocktwo {
+    box-sizing: border-box;
+    justify-content: center;     /*  text around the center */
+    text-align: center; /*  text around the center */
+}
+
+div.sectionthree h2, div.sectionthree p {
+    color: white;
+}
 
 @media(max-width: 584px){
-    .beginning{
+
+    .topnav {
+        width: 100%;
+        display: flex;
+        /* using flex */
+    }
+
+    .beginning {
     max-width: 100%;
     }
 
@@ -165,7 +211,7 @@ form .category label .dot{
         width: 100%;
     }
 
-    form .category{
+    form .category {
         width: 100%;
     }
 
@@ -173,13 +219,30 @@ form .category label .dot{
         max-height: 700px;
     }
 
-    .user-details::-webkit-scrollbar {
-        width: 9px;
+    footer {
+        width: 100%;
+        display: flex;
+        /* using flex */
     }
+    
 }
 
 @media(max-width: 459px) {
+
+    .topnav {
+        width: 100%;
+        display: flex;
+        /* using flex */
+    }
+    
     .beginning .content .category {
         flex-direction: column;
     }
+
+    footer {
+        width: 100%;
+        display: grid;
+        /* using grid */
+    }
+    
 }

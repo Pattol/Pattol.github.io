@@ -2,29 +2,29 @@ body {
     margin: 0; /* Apply to all four sides  0 */
     padding: 0;  /* Apply to all four sides 0 */
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; /* all the text will be used as a times new roman  */
     background-image: url("../images/heather-barnes-EZXfS9_o9DA-unsplash.jpg");
     background-repeat: no-repeat; /* Do not repeat a background image. */
-    background-size: 100%; /* the size of the image */
     background-position: center; /* the image must be in the center of the bage */
     background-attachment: fixed; /* don't scroll along with the page */
-    background-size: cover; 
+    background-size: cover;  /* the size of the image */
     position: relative;
     font-family: 'Times New Roman', Times, serif;   /* all the text to be time new roman */
 }
-  
+/* header */
 .header {
-    padding: 20px;
+    padding: 20px; 
     text-align: center;
 }
   
 .header > h1{
-    font-size: 40px;
+    font-size: 40px; /* the font of the h1 line */
     color: #8053A8;
 }
 
 .header h1 > a {
     color: #D9BFF2;    
+/* the color of text "Breeze" */
 }
 
 .logo {
@@ -33,7 +33,7 @@ body {
     top: 8px;
     right: 16px;
 }
-
+/* navogation */
 .topnav {
     overflow: hidden;
     background-color: #8053A8;
@@ -49,11 +49,11 @@ body {
 }
   
 .topnav a:hover {
-    transition: all 0.7s ease;  /* using animate */
+    transition: all 0.7s ease;  /* using animate */  /* this code I learned from 3WSchool   */
     background-color: #507B4A; /* when you click it change the colors  */
     color: black;
 }
-
+/* artical */
 article {
     /* using a grid */
     display: grid;
@@ -72,7 +72,8 @@ article {
 }
 
 .one h2{
-    text-transform: uppercase;
+    text-transform: uppercase; /* to do upper case for all text */
+/* I learnd this code from MND */
 }
 
 P  {
@@ -80,12 +81,12 @@ P  {
 }
 
 .image1{
+/* i learned this code from w3school */
     border-radius: 30%;
     width: 300px;
     float: right; 
 }
-
-
+/* footer */
 footer {
     display: flex;  /* using a flex  */
     align-items: center; /* Pack items around the center */
@@ -101,7 +102,8 @@ div.blockone {
 }
 
 div.blockone h1 > a {
-    color: #D9BFF2;    
+    color: #D9BFF2;   
+    /* the color of text "Breeze" */ 
 }
 
 .blocktwo a {
@@ -123,14 +125,31 @@ div.sectionthree h2, div.sectionthree p {
 
 @media (max-width: 584px){
 
-    footer {
+    .topnav {
+        width: 100%;
         display: flex;
+        /* using flex */
+    }
+
+
+    footer {
+        width: 100%;
+        display: flex;
+        /* using flex */
     }
 }
 
 @media(max-width: 459px) {
 
+    .topnav {
+        width: 100%;
+        display: flex;
+        /* using flex */
+    }
+
     footer {
+        width: 100%;
         display: grid;
+        /* using grid */
     }
   }
