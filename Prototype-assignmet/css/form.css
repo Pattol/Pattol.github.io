@@ -122,7 +122,6 @@ form .category label .dot{
     width: 20px;
     border: 5px solid;
     transition: all 0.7s ease-out;  /* using animate */ /* this code Ilearned from 3WSchool   */
-    box-shadow: 5px 5px 5px #707070;
 }
 /* The general sibling selector selects all elements that are next siblings of a specified element. */
 /* thats means select every .one element that are preceded by a #square-1 element*/
