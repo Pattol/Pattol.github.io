@@ -2,7 +2,7 @@ body {
     margin: 0; /* Apply to all four sides  0 */
     padding: 0;  /* Apply to all four sides 0 */
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif; /* all the text will be used as a times new roman  */
     background-image: url("../images/heather-barnes-EZXfS9_o9DA-unsplash.jpg");
     background-repeat: no-repeat; /* Do not repeat a background image. */
     background-position: center; /* the image must be in the center of the bage */
