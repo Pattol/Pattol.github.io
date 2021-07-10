@@ -13,7 +13,7 @@ body {
 }
 /* header */
 .header {
-    padding: 20px;
+    padding: 20px; /* Apply to all four sides 20px */
     text-align: center;
 }
   
@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-    padding: 3px;
+    padding: 3px; /* Apply to all four sides 3px */
     float: left;
     top: 8px;
     right: 16px;

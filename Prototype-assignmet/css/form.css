@@ -14,7 +14,7 @@ body {
 
 /* header  */
 .header {
-    padding: 20px;
+    padding: 20px;  /* Apply to all four sides 20px */
     text-align: center;
 }
   
@@ -30,7 +30,7 @@ body {
 }
 
 .logo {
-    padding: 3px;
+    padding: 3px;  /* Apply to all four sides 3px */
     float: left;
     top: 8px;
     right: 16px;
@@ -55,7 +55,6 @@ body {
     background-color: #507B4A; /* when you click it change the colors  */
     color: black;
 }
-
 
 .beginning {
     padding: 25px 25px;
@@ -135,15 +134,15 @@ form .category label .dot{
 /* this code Ilearned from CodeingLab.come   */
 }
 
- form input[type="radio"] {
+form input[type="radio"] {
     display: none;
 }
 
- form .button{
+form .button{
     height: 45px;
 }
 
- form .button input {
+form .button input {
     height: 100%;
     width: 100%;
     border-radius: 15px; /* Radius is set for all 4 sides by 15px */
@@ -154,7 +153,7 @@ form .category label .dot{
     background: #D9BFF2;
 }
 
- form .button input:hover {
+form .button input:hover {
     background: #507B4A;
 }
 /* footer */
