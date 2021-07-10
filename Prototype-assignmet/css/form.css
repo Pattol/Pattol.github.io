@@ -196,22 +196,21 @@ div.sectionthree h2, div.sectionthree p {
 @media(max-width: 584px){
 
     .topnav {
-        width: 100%;
-        display: flex;
-        /* using flex */
+        width: 100%;      /* 100% to be a full screen  */
+        display: flex;      /* using flex */
     }
 
     .beginning {
-    max-width: 100%;
+    max-width: 100%;         /* 100% to be a full screen  */
     }
 
     form .user .input-box {
         margin-bottom: 15px;  
-        width: 100%;
+        width: 100%;         /* 100% to be a full screen  */
     }
 
     form .category {
-        width: 100%;
+        width: 100%;         /* 100% to be a full screen  */
     }
 
     .content form .user {
@@ -219,9 +218,8 @@ div.sectionthree h2, div.sectionthree p {
     }
 
     footer {
-        width: 100%;
-        display: flex;
-        /* using flex */
+        width: 100%;         /* 100% to be a full screen  */
+        display: flex;       /* using flex */
     }
     
 }
@@ -229,19 +227,17 @@ div.sectionthree h2, div.sectionthree p {
 @media(max-width: 459px) {
 
     .topnav {
-        width: 100%;
-        display: flex;
-        /* using flex */
+        width: 100%;         /* 100% to be a full screen  */
+        display: flex;       /* using flex */
     }
     
     .beginning .content .category {
-        flex-direction: column;
+        flex-direction: column;       /* using flex */
     }
 
     footer {
-        width: 100%;
-        display: grid;
-        /* using grid */
+        width: 100%;         /* 100% to be a full screen  */
+        display: grid;     /* using grid */
     }
     
 }

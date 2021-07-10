@@ -11,7 +11,7 @@ body {
     position: relative;
     font-family: 'Times New Roman', Times, serif;   /* all the text to be time new roman */
 }
-  
+/* header */
 .header {
     padding: 20px;
     text-align: center;
@@ -19,13 +19,11 @@ body {
   
 .header > h1 {
     font-size: 40px; /* the font of the h1 line */
-    color: #8053A8; 
-    /* the color of text "FUN" */
+    color: #8053A8;  /* the color of text "FUN" */
 }
 
 .header h1 > a {
-    color: #D9BFF2;  
-    /* the color of text "Breeze" */
+    color: #D9BFF2;  /* the color of text "Breeze" */
 }
 
 .logo {
@@ -34,7 +32,7 @@ body {
     top: 8px;
     right: 16px;
 }
-
+/* navigation */
 .topnav {
     overflow: hidden;
     background-color: #8053A8;
@@ -54,7 +52,7 @@ body {
     background-color: #507B4A; /* when you click it change the colors  */
     color: black;
 }
-
+/* article */
 article {
     /* using grid for the artical */
     display: grid;
@@ -119,14 +117,12 @@ div.sectionthree h2, div.sectionthree p {
 
     .topnav {
         width: 100%;
-        display: flex;
-        /* using flex */
+        display: flex;   /* using flex */
     }
 
     footer {
         width: 100%;
-        display: flex;
-        /* using flex */
+        display: flex;  /* using flex */
     }
 }
 
@@ -134,13 +130,11 @@ div.sectionthree h2, div.sectionthree p {
 
     .topnav {
         width: 100%;
-        display: flex;
-        /* using flex */
+        display: flex;   /* using flex */
     }
 
     footer {
         width: 100%;
-        display: grid;
-        /* using grid */
+        display: grid;   /* using grid */
     }
 }
