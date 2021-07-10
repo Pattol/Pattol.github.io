@@ -80,7 +80,7 @@ body {
     justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
 }
 
-form .input-box span.holder{
+form .input-box label.holder{
     display: block;
 }
 
@@ -105,7 +105,7 @@ form .gender-details .gender-title{
 form .category{
     display: flex;  /* using a flex  */
     justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
-    width: 40%;  /* the size between the category */
+    width: 60%;  /* the size between the category */
     margin: 10px 10px;
 }
 
