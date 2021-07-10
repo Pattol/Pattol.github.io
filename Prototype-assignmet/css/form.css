@@ -55,16 +55,17 @@ body {
     background-color: #507B4A; /* when you click it change the colors  */
     color: black;
 }
-
+/* the beganing of the form */
 .beginning {
-    padding: 25px 25px;
+    padding: 25px;
     max-width: 450px; /* for the box whidth */
     width: 50%;
     border-radius: 10px; /* Radius is set for all 4 sides by 10px*/
     box-shadow: 0 10px 10px #507B4A;
     margin-top: 100px;
+    border: 25px;
 }
-/* the beganing of the form */
+
 .beginning .title {
     position: relative;
     font-size: 25px;
