@@ -9,12 +9,11 @@ body {
     background-attachment: fixed; /* don't scroll along with the page */
     background-size: cover;  /* the size of the image */
     position: relative;
-    font-family: 'Times New Roman', Times, serif;   /* all the text to be time new roman */
 }
 /* header */
 .header {
     padding: 20px; /* Apply to all four sides 20px */
-    text-align: center;
+    text-align: center; /* allows the text to be center */
 }
   
 .header > h1{
@@ -23,19 +22,18 @@ body {
 }
 
 .header h1 > a {
-    color: #D9BFF2;    
-/* the color of text "Breeze" */
+    color: #D9BFF2;    /* the color of text "Breeze" */
 }
 
 .logo {
-    padding: 3px;  /* Apply to all four sides 3px */
-    float: left;
-    top: 8px;
-    right: 16px;
+    padding: 3px; /* Apply to all four sides 3px */
+    float: left;    /* allows the text be besidwe the logo and it will be in the left */
+    top: 8px;    /* apply fior the top 8 px */
+    right: 16px; /* apply fior the right 16 px */
 }
 /* navigation */
 .topnav {
-    overflow: hidden;
+    overflow: hidden; /* to fit the padding box. */
     background-color: #8053A8;
 }
   
@@ -62,12 +60,11 @@ article {
 }
 
 .one {
-    font-size: 1em;
     background-color: #D9BFF2;
     padding: 10px;
-    margin: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 5px; /* the spacing in every erea of the box*/
+    margin-right: 20px; /* the spacing in right of the box*/
+    margin-top: 20px; /* the spacing in top of the box*/
 }
 
 .one h2{
@@ -89,7 +86,7 @@ P  {
 footer {
     display: flex;  /* using a flex  */
     align-items: center; /* Pack items around the center */
-    justify-content: space-around;
+    justify-content: space-around; /* to space between the text */
     padding: 10px 10px;
     background-color: #8053A8;
 }
@@ -101,8 +98,7 @@ div.blockone {
 }
 
 div.blockone h1 > a {
-    color: #D9BFF2;   
-    /* the color of text "Breeze" */ 
+    color: #D9BFF2;    /* the color of text "Breeze" */ 
 }
 
 .blocktwo a {
@@ -118,6 +114,11 @@ div.blocktwo {
     text-align: center; /*  text around the center */
 }
 
+div.sectionthree {
+    justify-content: center;     /*  text around the center */
+    text-align: center; /*  text around the center */
+}
+
 div.sectionthree h2, div.sectionthree p {
     color: white;
 }
@@ -126,15 +127,15 @@ div.sectionthree h2, div.sectionthree p {
 
     .topnav {
         width: 100%;
-        display: flex;
-        /* using flex */
+        display: flex;   /* using flex */
+        flex-direction: row;       /* using flex */
     }
 
 
     footer {
         width: 100%;
-        display: flex;
-        /* using flex */
+        display: flex;  /* using flex */
+        flex-direction: column;       /* using flex */
     }
 }
 
@@ -142,13 +143,12 @@ div.sectionthree h2, div.sectionthree p {
 
     .topnav {
         width: 100%;
-        display: flex;
-        /* using flex */
+        display: flex;   /* using flex */
+        flex-direction: column;       /* using flex */
     }
 
     footer {
         width: 100%;
-        display: grid;
-        /* using grid */
+        display: grid;   /* using grid */
     }
   }

@@ -15,7 +15,7 @@ body {
 /* header  */
 .header {
     padding: 20px;  /* Apply to all four sides 20px */
-    text-align: center;
+    text-align: center; /* allows the text to be center */
 }
   
 .header  h1{
@@ -30,10 +30,10 @@ body {
 }
 
 .logo {
-    padding: 3px;  /* Apply to all four sides 3px */
-    float: left;
-    top: 8px;
-    right: 16px;
+    padding: 3px; /* Apply to all four sides 3px */
+    float: left;    /* allows the text be besidwe the logo and it will be in the left */
+    top: 8px;    /* apply fior the top 8 px */
+    right: 16px; /* apply fior the right 16 px */
 }
 /* navigation */
 .topnav {
@@ -81,7 +81,7 @@ body {
 }
 
 form .input-box label.holder{
-    display: block;
+    display: block;   /* to be the label same size and same hight with padding */
 }
 
 .user .input-box input{
@@ -106,7 +106,7 @@ form .category{
     display: flex;  /* using a flex  */
     justify-content: space-between; /* spacing between each pair of adjacent items is the same. */
     width: 60%;  /* the size between the category */
-    margin: 10px 10px;
+    margin: 10px 10px;  /* to select the element's width. */
 }
 
 form .category label{
@@ -136,18 +136,14 @@ form .category label .dot{
 }
 
 form input[type="radio"] {
-    display: none;
-}
-
-form .button{
-    height: 45px;
+    display: none; /* to Turns off the display of an element  */
 }
 
 form .button input {
-    height: 100%;
-    width: 100%;
+    height: 100%;   /* to be the hight 100% */
+    width: 100%; /* to be the width 100% */
     border-radius: 15px; /* Radius is set for all 4 sides by 15px */
-    border: none;
+    border: none; /* tern off the border from the input button */
     color: #fff;
     font-size: 25px;
     transition: all 0.7s ease;    /* using animate */  /* this code I learned from 3WSchool   */
@@ -161,7 +157,7 @@ form .button input:hover {
 footer {
     display: flex;  /* using a flex  */
     align-items: center; /* Pack items around the center */
-    justify-content: space-around;
+    justify-content: space-around; /* to space between the text */
     padding: 10px 10px;
     background-color: #8053A8;
 }
@@ -173,7 +169,7 @@ div.blockone {
 }
 
 div.blockone h1 > a {
-    color: #D9BFF2;    
+    color: #D9BFF2;  /* the color of text "Breeze" */
 }
 
 .blocktwo a {
@@ -184,7 +180,11 @@ div.blockone h1 > a {
 }
 
 div.blocktwo {
-    box-sizing: border-box;
+    justify-content: center;     /*  text around the center */
+    text-align: center; /*  text around the center */
+}
+
+div.sectionthree {
     justify-content: center;     /*  text around the center */
     text-align: center; /*  text around the center */
 }
@@ -196,8 +196,9 @@ div.sectionthree h2, div.sectionthree p {
 @media(max-width: 584px){
 
     .topnav {
-        width: 100%;      /* 100% to be a full screen  */
-        display: flex;      /* using flex */
+        width: 100%;
+        display: flex;   /* using flex */
+        flex-direction: row;       /* using flex */
     }
 
     .beginning {
@@ -205,21 +206,23 @@ div.sectionthree h2, div.sectionthree p {
     }
 
     form .user .input-box {
-        margin-bottom: 15px;  
         width: 100%;         /* 100% to be a full screen  */
     }
 
     form .category {
         width: 100%;         /* 100% to be a full screen  */
+        display: flex;       /* using flex */
+        flex-direction: column;       /* using flex */
     }
 
     .content form .user {
-        max-height: 700px;
+        max-height: 100%;  /* 100% to be a full screen  */
     }
 
     footer {
         width: 100%;         /* 100% to be a full screen  */
         display: flex;       /* using flex */
+        flex-direction: column;       /* using flex */
     }
     
 }
@@ -227,11 +230,14 @@ div.sectionthree h2, div.sectionthree p {
 @media(max-width: 459px) {
 
     .topnav {
+        width: 100%;/* 100% to be a full screen  */
+        display: flex;   /* using flex */
+        flex-direction: column;       /* using flex */
+    }
+
+    form .category {
         width: 100%;         /* 100% to be a full screen  */
         display: flex;       /* using flex */
-    }
-    
-    .beginning .content .category {
         flex-direction: column;       /* using flex */
     }
 
