@@ -56,7 +56,7 @@ article {
     /* using a grid */
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.2fr 0.2fr;
+    grid-template-rows: 0fr 0fr;
 }
 
 .one {
