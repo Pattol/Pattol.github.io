@@ -39,6 +39,7 @@
                     <li><a class="dropdown-item" href="#Alerts">Alerts</a></li>
                     <li><a class="dropdown-item" href="#Cards">Cards</a></li>
                     <li><a class="dropdown-item" href="#ListGroup">List group</a></li>
+                    <li><a class="dropdown-item" href="#Dropdowns">Dropdowns</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -79,6 +80,7 @@
             <li class="list-group-item">Alerts</li>
             <li class="list-group-item">Cards</li>
             <li class="list-group-item">List group</li>
+            <li class="list-group-item">Dropdowns</li>
           </ul>
           <a><hr class="dropdown-divider"></a>
       </div>
@@ -89,7 +91,7 @@
     <!-- The Text is in blue color -->
         <h3 class="text-primary">Buttins </h3> 
     <!-- Pading  -->
-        <p class="p-3">Bootstrap’s custom button styles for actions in forms</p>
+        <p class="p-3">Bootstrap’s custom button styles for actions in forms. We learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/components/buttons/">Bootstrap’s website</a></p>
         <h5>example</h5>
         <p>each Button will discripe Something:</p>
     <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3--> 
@@ -130,7 +132,7 @@
         <!-- The Text is in blue color -->
       <h3 class="text-primary">Grid</h3>
     <!-- Pading  -->
-      <p class="p-3">A Grid is Bootstrap’s grid use for containers, rows, and columns to layout and align content.</p>
+      <p class="p-3">A Grid is Bootstrap’s grid use for containers, rows, and columns to layout and align content. We learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/layout/grid/">Bootstrap’s website</a></p>
 
       <h4>Example 1:</h4>
         <div class="row p-1 m-auto p-3">
@@ -158,8 +160,9 @@
     <h3 class="text-primary">Text and Colours</h3>
     <!-- Pading  -->
     <p class="p-3"> down bellow, the examples of Text and Coluurs that we learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/utilities/colors/#colors">Bootstrap’s website</a></p>
-<!-- Using grid to be two columns -->
+    <!-- Using grid to be two columns -->
     <div class="row">
+    <!-- 1st column -->
       <div class="col">
         <p class="text-secondary">.text-secondary</p>
         <p class="text-success">.text-success</p>
@@ -168,6 +171,7 @@
         <p class="text-info bg-dark">.text-info</p>
         <p class="text-light bg-dark">.text-light</p>
       </div>
+    <!-- second Column -->
       <div class="col">
         <p class="text-dark">.text-dark</p>
         <p class="text-body">.text-body</p>
@@ -204,8 +208,9 @@
     <div class="me-auto mb-2 p-5" id="Cards">    
         <!-- The Text is in blue color -->
       <h3 class="text-primary">Cards</h3>
-<!-- Using grid to be 3 columns -->
+    <!-- Using grid to be 3 columns -->
       <div class="row">
+    <!--  first column -->
         <div class="col">
           <div class="card" style="width: 18rem;">
             <img src="images/Capture.PNG" class="card-img-top" alt="images">
@@ -216,6 +221,7 @@
             </div>
           </div>
         </div>
+   <!-- Second Column -->
         <div class="col mb-2">
           <div class="card" style="width: 18rem;">
             <img src="images/Capture2.PNG" class="card-img-top" alt="images">
@@ -226,6 +232,7 @@
             </div>
           </div>
         </div>
+  <!-- 3rd Column -->
         <div class="col">
           <div class="card" style="width: 18rem;">
             <img src="images/Capture3.PNG" class="card-img-top" alt="images">
@@ -246,9 +253,10 @@
       <!-- The Text is in blue color -->
     <h3 class="text-primary">List group</h3>
       <!-- Pading  -->
-    <p  class="p-3">list group is an unordered/ ordered list with list items.Down bellow I have some example of List group</p>
-<!-- Using grid to be two columns -->
+    <p  class="p-3">list group is an unordered/ ordered list with list items.Down bellow I have some example of List group. We learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/components/list-group/">Bootstrap’s website</a></p>
+      <!-- Using grid to be two columns -->
     <div class="row">
+    <!-- 1st Column -->
       <div class="col">
         <h4>First Example: unordered List</h4>
         <ul class="list-group">
@@ -257,6 +265,7 @@
           <li class="list-group-item"> third item</li>
         </ul>
       </div>
+    <!-- 2cd column -->
       <div class="col">
         <h4>Second Example: Numbered</h4>
         <ol class="list-group list-group-numbered">
@@ -268,6 +277,40 @@
     </div>
     <a><hr class="dropdown-divider"></a>
   </div>
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+    <!-- the Id for On Page Links -->
+    <div class="me-auto mb-2 p-5" id="Dropdowns">
+      <!-- The Text is in blue color -->
+      <h3 class="text-warning">Dropdowns</h3>
+    <!-- Example split danger button -->
+      <div class="btn-group p-2">
+        <button type="button" class="btn btn-danger">Action</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">1st</a></li>
+          <li><a class="dropdown-item" href="#">2nd</a></li>
+          <li><a class="dropdown-item" href="#">3rd</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group p-2">
+        <button type="button" class="btn btn-warning">Action</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">1st</a></li>
+          <li><a class="dropdown-item" href="#">2nd</a></li>
+          <li><a class="dropdown-item" href="#">3rd</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
     <!-- the Id for On Page Links -->
@@ -283,7 +326,6 @@
       <li>Factor in Design website</li>
     </ol>  
   </div>
-
 
     <!-- javaScripts link and "note for me: you have to use script code to work on the boostrap"  -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
