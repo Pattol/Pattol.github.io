@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Boostrap This!</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <!-- "navbar" for the boostrap so he can know this is a navbar 
+          "navbar-expand-lg" the size of navbar and lg is a large 
+          "bg-light" the colore of the backround of bavbar its light-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--"container-fluid" full-width container -->
+        <div class="container-fluid">
+    <!--"navbar-brand" is for logo -->
+          <a class="navbar-brand" href="index.html">Boostrap This!</a>
+    <!-- using button for collaps -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    <!-- the id="navbarSupportedContent" is for JavaScripts -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- "Me-outo" is for margin end and "mb-2" margin-bottom for $spacer * .5-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Buttin</a></li>
+                    <li><a class="dropdown-item" href="#">Grid</a></li>
+                    <li><a class="dropdown-item" href="#">text and Colours</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Alerts</a></li>
+                    <li><a class="dropdown-item" href="#">Cards</a></li>
+                    <li><a class="dropdown-item" href="#">List group</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Benefits</a>
+                </li>
+            </ul>
+      <!-- the form using flex -->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- the end of navbar -->
+    <!-- get startded -->
+
+        <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+        <div class="me-auto mb-2 p-5">
+          <h1 class="text-success">Welcome to Boostrap assingment</h1>
+          <p class="p-3">Now a days boostrap is one of most impostant in in web development. it will help our site look clean and neat. <br>
+            Also our website will be responsive on any device without the need of add anythng.</p>
+            <a><hr class="dropdown-divider"></a>
+      </div>
+
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+      <div class="me-auto mb-2 p-5">
+          <p>let's talk About Boostrap</p>
+          <p>A Boostrap is a ramework for building responsive, mobile-first sites.</p>
+          <p>I learned so far:</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Buttin</li>
+            <li class="list-group-item">Grid</li>
+            <li class="list-group-item">text and Colours</li>
+            <li class="list-group-item">Alerts</li>
+            <li class="list-group-item">Cards</li>
+            <li class="list-group-item">List group</li>
+          </ul>
+          <a><hr class="dropdown-divider"></a>
+      </div>
+
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+      <div class="me-auto mb-2 p-5">
+    <!-- The Text is in blue color -->
+        <h3 class="text-primary" >Buttins </h3> 
+        <p class="p-3">Bootstrap’s custom button styles for actions in forms</p>
+        <h5>example</h5>
+        <p>each Button will discripe Something:</p>
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3--> 
+          <div class="me-auto mb-2 p-5">
+                <!-- when you click it give you the colour of blue and the text white -->
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                <!-- when you click it give you the colour of grey and the text white -->
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <!-- when you click it give you the colour of green and the text white -->
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                <!-- when you click it give you the colour of red and the text white -->
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                <!-- when you click it give you the colour of yallow and the text black -->
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                <!-- when you click it give you the colour of ligh blue and the text black -->
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                <!-- when you click it give you the colour of light gray and the text black -->
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                <!-- when you click it give you the colour of black and the text white -->
+                    <button type="button" class="btn btn-outline-dark">Dark</button><br>
+          </div>
+        <p class="p-3">
+              Primary: when you click it give you the colour of blue and the text white.<br>
+              Secondary: when you click it give you the colour of grey and the text white.<br>
+              Success: when you click it give you the colour of green and the text white.<br>
+              Danger: when you click it give you the colour of red and the text white. <br>
+              Warning: when you click it give you the colour of yallow and the text black.<br>
+              Info: when you click it give you the colour of ligh blue and the text black. <br>
+              light: when you click it give you the colour of light gray and the text black.<br>
+              Dark: when you click it give you the colour of black and the text white.
+        </p>
+            <a><hr class="dropdown-divider"></a>
+      </div>
+
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+    <div class="me-auto mb-2 p-5">
+        <!-- The Text is in blue color -->
+      <h3 class="text-primary">Grid</h3>
+      <p class="p-3">A Grid is Bootstrap’s grid use for containers, rows, and columns to layout and align content.</p>
+
+      <h4>Example 1:</h4>
+        <div class="row p-1 m-auto p-3">
+            <div class="col text-primary">Column 1</div>
+            <div class="col text-primary">Column 2</div>
+            <div class="col text-primary">Column 3</div>
+        </div>
+        <P class="p-3"> In the first example, will see a there equal-width columns.</P>
+      <h4>Example 2:</h4>
+          <div class="row p-1 m-auto p-3">
+              <div class="col-4 text-primary">Column 1</div>
+              <div class="col-4  text-primary">Column 2</div>
+              <div class="col-4  text-primary">Column 3</div>
+              <div class="col-6 text-secondary">Column 4</div>
+              <div class="col-6 text-secondary">Column 5</div>
+        </div>
+        <P class="p-3"> In the second example, will see a the first there Column is in col-4 and for last two is in the col-6.</P>
+        <a><hr class="dropdown-divider"></a>
+  </div>
+  
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+  <div class="me-auto mb-2 p-5">
+    <!-- The Text is in blue color -->
+    <h3 class="text-primary">Text and Colours</h3>
+    <p class="p-3"> down bellow, the examples of Text and Coluurs that we learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/utilities/colors/#colors">Bootstrap’s website</a></p>
+    <div class="row">
+      <div class="col">
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-warning bg-dark">.text-warning</p>
+        <p class="text-info bg-dark">.text-info</p>
+        <p class="text-light bg-dark">.text-light</p>
+      </div>
+      <div class="col">
+        <p class="text-dark">.text-dark</p>
+        <p class="text-body">.text-body</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <p class="text-black-50">.text-black-50</p>
+        <p class="text-white-50 bg-dark">.text-white-50</p>      
+      </div>
+      <a><hr class="dropdown-divider"></a>
+    </div>
+  </div>
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+  <div class="me-auto mb-2 p-5">
+      <!-- The Text is in blue color -->
+    <h3 class="text-primary">Alerts</h3>
+    <p class="p-3">Alerts is a feedback messages for typical user action. it can be also a alert messages.<br>
+                  Doun bellow, we have an examples that we learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/components/alerts/">Bootstrap’s website</a></p>
+      <div class="alert alert-primary" role="alert"> primary alert </div>
+      <div class="alert alert-secondary" role="alert"> secondary alert </div>
+      <div class="alert alert-success" role="alert"> success alert </div>
+      <div class="alert alert-danger" role="alert"> danger alert </div>
+      <div class="alert alert-warning" role="alert"> warning alert </div>
+      <div class="alert alert-info" role="alert"> info alert </div>
+      <div class="alert alert-light" role="alert">light alert </div>
+      <div class="alert alert-dark" role="alert">mdark aler </div>   
+      <a><hr class="dropdown-divider"></a>
+  </div>
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+    <div class="me-auto mb-2 p-5">    
+        <!-- The Text is in blue color -->
+      <h3 class="text-primary">Cards</h3>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/Capture.PNG" class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title">Blue box</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-2">
+          <div class="card" style="width: 18rem;">
+            <img src="images/Capture2.PNG" class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title">Yallow box</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/Capture3.PNG" class="card-img-top" alt="images">
+            <div class="card-body">
+              <h5 class="card-title">Greed Box</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a><hr class="dropdown-divider"></a>
+  </div>
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+  <div class="me-auto mb-2 p-5">
+      <!-- The Text is in blue color -->
+    <h3 class="text-primary">List group</h3>
+    <p  class="p-3">list group is an unordered/ ordered list with list items.Down bellow I have some example of List group</p>
+    <div class="row">
+      <div class="col">
+        <h4>First Example: unordered List</h4>
+        <ul class="list-group">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item"> second item</li>
+          <li class="list-group-item"> third item</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Second Example: Numbered</h4>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+        </ol>  
+      </div>
+    </div>
+    <a><hr class="dropdown-divider"></a>
+  </div>
+
+  <div class="me-auto mb-2 p-5">
+            <!-- The Text is in blue color -->
+    <h3 class="text-warning">The Benefits of using Bootstrap</h3>
+    <ol class="p-3">
+      <li>It's works in all modern browser for example chrome, Edge, and Safari</li>
+      <li>Easy to code</li>
+      <li>Easy to understand</li>
+      <li>Save time</li>
+      <li>Factor in Design website</li>
+    </ol>  
+  </div>
+
+
+    <!-- javaScripts link and "note for me: you have to use script code to work on the boostrap"  -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html> 
