@@ -32,6 +32,7 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About</a>
                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Nav&Nabar">Nav & Navbar</a></li>
                     <li><a class="dropdown-item" href="#Buttin">Buttin</a></li>
                     <li><a class="dropdown-item" href="#Grid">Grid</a></li>
                     <li><a class="dropdown-item" href="#text&Colours">text and Colours</a></li>
@@ -74,6 +75,7 @@
           <p>A Boostrap is a ramework for building responsive, mobile-first sites.</p>
           <p>I learned so far:</p>
           <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nav & Navbar</li>
             <li class="list-group-item">Buttin</li>
             <li class="list-group-item">Grid</li>
             <li class="list-group-item">text and Colours</li>
@@ -84,7 +86,52 @@
           </ul>
           <a><hr class="dropdown-divider"></a>
       </div>
-
+    <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
+    <!-- the Id for On Page Links -->
+    <div class="me-auto mb-2 p-5" id="#Nav&Nabar">
+          <!-- The Text is in blue color -->
+      <h3 class="text-primary">Nav and Nabar</h3>
+    <!-- Pading  -->
+      <p class="p-3">The navbar, Bootstrap's strong, responsive navigation header, has documentation and examples. Includes branding, navigation, and other features, as well as compatibility for our collapse plugin.
+        We learned in the class and in the <a href="https://getbootstrap.com/docs/5.0/components/navbar/">Bootstrap’s website</a></p>
+      <h5>example</h5>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!-- margin end auto margen bottom to $spacer * .5  and padding to $spacer * 3-->
     <!-- the Id for On Page Links -->
       <div class="me-auto mb-2 p-5" id="Buttin">
