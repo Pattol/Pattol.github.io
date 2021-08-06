@@ -1,0 +1,134 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#nav {
+    background-color: #606d5d;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#nav a {
+    float: left; 
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;  /* for the text-decoration of the text  */
+}
+
+#nav a:hover {
+    background-color: #ccc;  /* when you click one of nav section it change the colour to #88958D*/
+}
+
+#main {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+#home {
+    padding: 10px;
+    background-color: #ccc; 
+}
+
+.page-title,
+.section-title {
+    font-size: 16px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about {
+    padding: 10px;
+    background-color: #ccc;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;  /* the text will be all left in the home section */
+    color: #000; 
+}
+  
+.about-image {
+    float: left;
+    max-width: 100px;
+    padding: 10px;
+    width: 300px;
+}
+
+.contact {
+    background-color: #ccc; 
+    padding: 20px; 
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.contact-form {
+    background-color: #606d5d;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 1200px;
+}
+  
+label {
+    font-size: 10px;
+}
+
+.contact-form-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #88958D;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 100%;  /* it will be the same of contact-form-input width  */
+    background-color: #88958D;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+button[type=submit]:hover {
+    background-color: #ccc; /* when you submit will change the color */
+}
+
+footer {
+    background-color: #606d5d;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+footer p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #000;
+}
+
+
+@media (min-width: 500px) {  /*  to be responsive*/
+    nav {
+        max-width: 1200px;
+        margin: 0px auto;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: 0px auto;    
+    }
+
+    .contact-form {
+        background-color: #606d5d;
+        width: 300px;
+        padding: 10px;
+        border-radius: 4px;
+        max-width: 1200px;
+    }
+      
+  }
