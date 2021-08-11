@@ -10,6 +10,9 @@
   <!-- boostrap link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>web portfolio</title>
 </head>
 <body>
@@ -43,23 +46,75 @@
       </nav>
 <!-- ending navbar -->
 
-    <div class="contaner">
-        <h2>My Works</h2>
-        <p>Here is my work</p>
+<article>
+  <div class="one">
+    <div class="one">
+      <h2>My Works</h2>
+      <p>Here is my work</p>
+    </div>
+    <div class="two">
+      <img 
+      srcset="images/photos/rand320.gif 320w, 
+              images/photos/rand480.gif 480w, 
+              images/photos/rand720.gif 720w,
+              images/photos/rand960.gif 960w"
+      sizes="(min-width: 960px) 50vw, 100vw"
+      src="images/photos/rand960.gif" 
+      alt="photo of photography">
+    </div>
+    <div class="two">
+      <img 
+      srcset="images/photos/rayan320.gif 320w, 
+              images/photos/rayan480.gif 480w, 
+              images/photos/rayan720.gif 720w,
+              images/photos/rayan960.gif 960w"
+      sizes="(min-width: 960px) 50vw, 100vw"
+      src="images/photos/rayan960.gif" 
+      alt="photo of photography">
+    </div>
+    <div class="two">
+      <img 
+      srcset="images/photos/sura320.gif 320w, 
+              images/photos/sura480.gif 480w, 
+              images/photos/sura720.gif 720w,
+              images/photos/sura960.gif 960w"
+      sizes="(min-width: 960px) 50vw, 100vw"
+      src="images/photos/sura960.gif" 
+      alt="photo of photography">
+    </div>
+    <div class="two">
+      <iframe src="https://www.youtube.com/embed/4GRTdYsAAFM" title="YouTube video player" class="vid"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <section>
+    <div class="two">
 
-    </section>
+    </div>
+    <div class="two">
+      <img 
+      srcset="images/photos/logo320.gif 320w, 
+              images/photos/logo480.gif 480w, 
+              images/photos/logo720.gif 720w,
+              images/photos/logo960.gif 960w"
+      sizes="(min-width: 960px) 50vw, 100vw"
+      src="images/photos/logo960.gif" 
+      alt="photo of logo">
+    </div>
+    <div class="two">
+      <iframe src="https://www.youtube.com/embed/EdVSx2ANqxI" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</article>
 
 
 <!-- footer -->
   <footer>
       <div><p>Follow me on Social Media </p></div>
       <div class="icons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
+        <i class="fa fa-facebook-square" style="font-size:36px"></i>
+        <i class="fa fa-github" style="font-size:36px"></i>
+        <i class="fa fa-youtube" style="font-size:36px"></i>
       </div>
   </footer>
     <!-- javaScripts link and "note for me: you have to use script code to work on the boostrap"  -->
