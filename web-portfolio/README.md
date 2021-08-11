@@ -3,16 +3,16 @@
 I did 3 pages for web portfolio assignmet 
 
 # Home page "the index page" 
-<!-- the index page will represent what the website is for example i talked about what my portfolio will have 
+the index page will represent what the website is for example i talked about what my portfolio will have 
 first : photograph 
 second: videography
-last: logos  -->
+last: logos  
 
 # about page 
-<!-- about page is my personal inforation  -->
+about page is my personal inforation
 
 # Postfoio page 
-<!-- is what my work and showing my work  -->
+is what my work and showing my work 
 
 the assignment was fun and hard to do it. 
 first is was a final weeks 
@@ -26,3 +26,5 @@ secondly, this assignment was due the same day and the same time as the assignme
 2- Rand Fakhory 
 <!-- one with 20 birthday -->
 3- Sura abdu-alhafid 
+4- Omar Fakhory
+<!-- inside the youtube video -->
