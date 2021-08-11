@@ -24,6 +24,26 @@ h2 {
     margin: 1rem;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+   
+.one {
+    padding: 1rem;
+    margin: 1rem; /* the spacing in every erea of the box*/
+}
+
+article {
+    /* using a grid */
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 0fr;
+    padding: 1rem;
+    margin: 1rem;
+}
+
 footer {
     background-color: #707070;
     text-align: center;
@@ -31,6 +51,7 @@ footer {
     margin: 1rem;
     font: 1em bold;
     color: #fff;
+    height: 100%;
 }
 
 .icons {
