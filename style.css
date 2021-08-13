@@ -37,13 +37,18 @@ h2 {
 
 /* vid */
 iframe {
-    width: 55%;
+    width: 50%;
     height: 500px;
 }
 /* end vid */
 /* portfolio */
 .two {
     display: flex;
+    padding: 1rem; /* from the box area tll the input is 1rem */
+    margin: 1rem; 
+}
+
+.three {
     padding: 1rem; /* from the box area tll the input is 1rem */
     margin: 1rem; 
 }
@@ -82,3 +87,22 @@ footer {
 }
 
 /* end footer */
+
+
+@media ( max-width: 414px) {
+    .three {
+        position: relative;
+        width: 100%;
+        padding-bottom: 50%;
+        height: 0;
+    }
+
+    .three iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+}
